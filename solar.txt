@@ -1,0 +1,14 @@
+{"solar": {
+ "temps": {
+  "collector": 108.1,
+  "tank1": 147.0,
+  "tank2": 145.6,
+  "pool": 97.7
+ }
+ "devices": {
+  "pump": 0,
+  "valvetank1": 0,
+  "valvetank2": 0,
+  "valvepool": 0
+ }
+}}

@@ -1,0 +1,86 @@
+@font-face { font-family: Transport; src: url('../img/transport.otf'); }
+
+html {
+    /*background: url('../img/circuit.png') no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-rendering: optimizequality;
+    min-width: 800px;
+}
+
+body {
+    background: transparent;
+    font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border: 1px solid #CCC;
+}
+
+#dattoLogo{
+    color: #232e64;
+    font-family: Transport;
+    font-size: 128px;
+    display: block;
+    height: 50px;
+    margin: -20px 0 75px 0;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 1px 1px, rgba(0, 0, 0, 0.25) 2px 2px, rgba(0, 0, 0, 0.25) 3px 3px;
+}
+
+video#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#floater {
+    padding: 29px 29px 29px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    margin-top: -207.5px;
+    height: 415px;
+    left: 50%;
+    margin-left: -325px;
+    position: absolute;
+    top: 45%;
+    width: 650px;
+    text-shadow: rgba(155, 155, 155, 0.25) 1px 1px, rgba(155, 155, 155, 0.25) 2px 2px, rgba(155, 155, 155, 0.25) 3px 3px;
+    z-index: 6;
+
+    cursor: default;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div#stcchart {
+    padding: 20px 20px 20px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    height: 80%;
+    position: absolute;
+    width: 90%;
+    text-shadow: rgba(155, 155, 155, 0.25) 1px 1px, rgba(155, 155, 155, 0.25) 2px 2px, rgba(155, 155, 155, 0.25) 3px 3px;
+    z-index: 6;
+
+    cursor: default;
+}

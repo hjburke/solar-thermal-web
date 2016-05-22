@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solar Thermal System</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <script src="//code.highcharts.com/highcharts.js"></script>
+
+    <link href="css/solar.css" rel="stylesheet">
+    <script src="script/solar.js"></script>
+
+    <script>
+        $(function() {
+            $( "#fromDate" ).datepicker({
+                dateFormat: "yy-mm-dd"
+            });
+            $( "#toDate" ).datepicker({
+                dateFormat: "yy-mm-dd"
+            });
+        });
+    </script>
+</head>
+<body>
+    <video muted="muted" autoplay="autoplay" id="bgVideo" onended="this.play();" loop="loop">
+        <source type="video/mp4" src="video/OpenfootageNET_00160_cloud_H264_NTSCWIDE.mov"></source>
+    </video>
+
+    <div id="stcchart">
+        From Date: <input type="text" id="fromDate">
+        To Date: <input type="text" id="toDate">
+        <button id="change">Refresh Table</button>
+        <button id="12h">Last 12 Hours</button>
+        <button id="6h">Last 6 Hours</button>
+        <div id="container" style="width:100%; height:50%;"></div>
+        <div id="container2" style="width:100%; height:50%;"></div>
+    </div>
+</body>
+</html>
